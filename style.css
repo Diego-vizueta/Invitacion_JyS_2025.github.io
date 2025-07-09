@@ -1,0 +1,245 @@
+
+/* INICIO > Estilos para  interfaz_1 confirmación de asistencia*/
+
+
+body {
+    background: #f4f2ec; opacity: 0.8;
+
+
+  }
+  
+  /* Tarjeta del formulario */
+  .form-card {
+    background-color: #F4F2EC ;
+    border: 0,5px solid #8D8C8A ;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  
+  /* Labels pequeños y alineados a la izquierda */
+  .form-label {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+  
+  /* Botón verde con hover amarillo */
+  .btn-enviar {
+    background-color: #5E6C56;
+    color: #F4F2EC;
+    border: none;
+  }
+  .btn-enviar:hover {
+    background-color: #DAA520;
+    color: black;
+  }
+  
+  /* Imagen circular */
+  .imagen-circular {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+   /* border: 3px solid #007bff; */
+  }
+  
+  /* Título con letra caligráfica si deseas */
+  .titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #5E6C56;
+    text-align: center;
+  }
+
+    .subtitulo {
+    font-family:  'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: #5E6C56;
+    text-align: center;
+  }
+
+  
+  
+  .parrafo {
+/* font-family: 'Great Vibes', cursive;  */
+font-family: 'Libre Baskerville', serif;
+    font-size: 1,5rem;
+    color: #8D8C8A;
+  }
+
+
+  
+  /* Footer íconos */
+  footer {
+    margin-top: 30px;
+  }
+  footer a {
+    color: #F4F2EC;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #C9A227;
+  }
+  
+
+
+  .bg5 {
+    background-color: #5E6C56;
+    /*border: 0,5px solid #8D8C8A ; */
+   /* border-radius: 10px;  */
+    padding: 25px;
+  }
+
+
+  .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  
+
+  /* FIN > Estilos para  interfaz_1 confirmación de asistencia*/
+
+
+  /* inicio img  foto hover*/
+
+  
+  /* Estilos CSS */
+  
+    /* Estilo base para todas las imágenes */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Imagen con efecto hover */
+    .img-hover {
+      cursor: pointer;
+      border-radius: 4px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .img-hover:hover {
+      box-shadow: 0 0 10px #DAA520 ;
+    }
+
+    /* Centrado vertical en mobile */
+    @media (max-width: 767.98px) {
+      .main-section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+      /* inicio img  foto hover*/
+  
+
+
+
+
+/* Estilos personalizados */
+
+/* Mostramos el botón flotante cuando es necesario */
+#btnSubir {
+  z-index: 1000;
+  background-color: rgb(132, 173, 137);
+  border-color: #DAA520;
+}
+
+
+.bg-success1 {
+  background-color: #F4F2EC;
+}
+
+
+/* -------------------------- Tamaño fijo para pantallas grandes */
+.imagen-personalizada {
+  width: 300px;     /* o el tamaño que desees */
+  height: auto;     /* mantiene la proporción */
+}
+
+/* Para pantallas pequeñas, que ocupe el 100% del ancho */
+@media (max-width: 768px) {
+  .imagen-personalizada {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*---------------------imagen personaloizada 2 */
+.imagen-personalizada2 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #DAA520;
+  border-radius: 50%; /* Esto la hace circular */
+  object-fit: cover;  /* Asegura que se recorte bien dentro del círculo */
+
+}
+
+/*---------------------imagen personaloizada 2 */
+.imagen-personalizada3 {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #DAA520;
+  border-radius: 50%; /* Esto la hace circular */
+  object-fit: cover;  /* Asegura que se recorte bien dentro del círculo */
+  text-align: center;
+}
+
+
+/*----------------   */ 
+
+/*---------------------imagen personalizada 4  icons circulo gris  */
+.imagen-personalizada4 {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #A9ACA4;
+  border-radius: 50%; /* Esto la hace circular */
+  object-fit: cover;  /* Asegura que se recorte bien dentro del círculo */
+
+}
+
+
+/*    ------------------  puntos de navegación carrusell  *
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+
+/* ************index_pases_   Estilo para centrar verticalmente el contenido de la sección 1 */
+#seccion10 {
+  min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
+  display: flex; /* Activa flexbox en el contenedor */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  flex-direction: column; /* Ordena los elementos de arriba a abajo */
+}
+
+
+
+
+
+/*  --------------------------- inicio  boton de pases img hover   --------------------*/
+/* Estilo general: imagen fluida para todas las pantallas */
+.boton-img {
+  max-width: 150px; /* tamaño máximo en PC */
+  width: 100%;      /* que se adapte al contenedor */
+  height: auto;     /* mantiene la proporción */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .boton-img {
+    max-width: 180px; /* tamaño máximo en móviles */
+  }
+}
+
+/*  --------------------------- fin  boton de pases img hover   --------------------*/
