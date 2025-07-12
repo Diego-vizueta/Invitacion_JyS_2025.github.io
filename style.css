@@ -8,9 +8,9 @@ body {
 
   }
   
-  /* Tarjeta del formulario */
+  /*   ------------------  Tarjeta del formulario */
   .form-card {
-    background-color: #F4F2EC ;
+    background-color: #F4F2EC ;      
     border: 0,5px solid #8D8C8A ;
     border-radius: 10px;
     padding: 25px;
@@ -42,7 +42,7 @@ body {
    /* border: 3px solid #007bff; */
   }
   
-  /* Título con letra caligráfica si deseas */
+  /*   ------------------  Título con letra caligráfica si deseas */
   .titulo {
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
@@ -140,7 +140,7 @@ font-family: 'Libre Baskerville', serif;
 
 
 
-/* Estilos personalizados */
+/*  Estilos personalizados */
 
 /* Mostramos el botón flotante cuando es necesario */
 #btnSubir {
@@ -155,7 +155,7 @@ font-family: 'Libre Baskerville', serif;
 }
 
 
-/* -------------------------- Tamaño fijo para pantallas grandes */
+/* ------------------------------------  Tamaño fijo para pantallas grandes */
 .imagen-personalizada {
   width: 300px;     /* o el tamaño que desees */
   height: auto;     /* mantiene la proporción */
@@ -168,6 +168,38 @@ font-family: 'Libre Baskerville', serif;
     height: auto;
   }
 }
+
+
+
+
+
+/* ------------------------------------  Tamaño fijo para pantallas grandes */
+.imagen-personalizada5 {
+  width: 150px;     /* o el tamaño que desees */
+  height: auto;     /* mantiene la proporción */
+  border: 2px solid #DAA520;
+  border-radius: 50%; /* Esto la hace circular */
+}
+
+/* Para pantallas pequeñas, que ocupe el 100% del ancho */
+@media (max-width: 768px) {
+  .imagen-personalizada5 {
+    width: 40%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------imagen personaloizada 2 */
@@ -243,3 +275,8 @@ font-family: 'Libre Baskerville', serif;
 }
 
 /*  --------------------------- fin  boton de pases img hover   --------------------*/
+
+
+
+
+
