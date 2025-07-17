@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Confirmación de Asistencia</title>
+     <!-- META TAGS PARA WHATSAPP Y REDES SOCIALES -->
+<meta name="author" content="Diego Fernando Vizueta Díaz, Design UX/UI ">
+<meta property="og:title" content="Invitación a Nuestra Boda: Jorge y Sandra" />
+<meta property="og:description" content="Acompáñanos a celebrar un momento inolvidable. ¡Estás invitado!" />
+<meta property="og:image" content="https://diego-vizueta.github.io/Invitacion_JyS_2025.github.io/bienvenidos.jpg" />
+<meta property="og:url" content="https://diego-vizueta.github.io/Invitacion_JyS_2025.github.io/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <title> Invitación Boda JyS</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -59,15 +68,12 @@
     </div>
   </nav>
 
-
-
-
   <!--  Sección 1 -->
   <section id="seccion1" class="bg-success1 text-white text-center p-1 ">
     
   
      <!-- Contenedor principal -->
-  <div class="container py-5">
+  <div class="container py-3">
     <div class="row justify-content-center">
       <div class="col-md-8">
 
@@ -82,20 +88,9 @@
              
           <!--   <p class="text-center parrafo">Completa el formulario para confirmar tu asistencia al evento.</p> -->
 
-             
-
-               
-
-                   
-
-
+    
                        <img src="Mask group.png " class="img-fluid imagen-personalizada5 " alt=" Imagen">
               <br>
-
-
-
-              
-            
 
               <h1 class="text-center mb-3 titulo"> Jorge y Sandra</h1>
 
@@ -605,8 +600,8 @@
           <div class="card form-card shadow"  >
 
             <div class="card-body">
-              <h1 class="text-center mb-3 titulo">Confirma tu asistencia</h1>
-              <p class="text-center parrafo">Completa el formulario para confirmar tu asistencia al evento.</p>
+              <!-- <h1 class="text-center mb-3 titulo">Confirma tu asistencia</h1>
+              <p class="text-center parrafo">Completa el formulario para confirmar tu asistencia al evento.</p> -->
 
               <!-- Imagen circular -->
               <div class="text-center mb-3">
@@ -620,6 +615,8 @@
                    <img src="boton_Sello.png" alt="Haz clic aquí" class="boton-img img-hover">
                       </a>
 
+                         <h1 class="text-center mb-3 titulo">Confirma tu asistencia</h1>
+
 
 
               </div>
@@ -627,45 +624,50 @@
 
 
               <!-- inicio Formulario -->
+
+              <!-- Formulario de confirmación de asistencia -->
+
               <form id="miFormulario">
 
+                <!-- Campo: Nombre del invitado -->
                 <div class="mb-3">
-                  <!-- <label class="form-label">Nombre de los asistentes</label> -->
-                  <input type="text" class="form-control mb-2" id="asistente1" placeholder="Nombre del asistente">
-                <!--  <input type="text" class="form-control mb-2" id="asistente2" placeholder="Asistente 2">
-                  <input type="text" class="form-control mb-2" id="asistente3" placeholder="Asistente 3">
-                  <input type="text" class="form-control mb-2" id="asistente4" placeholder="Asistente 4">  -->
+                  <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre del invitado" required>
                 </div>
 
-                <div class="mb-3">
-                <!-- <label for="correo" class="form-label">Correo electrónico</label>  -->
-                  <input type="email" class="form-control" id="correo" placeholder="Email" required>
+                <!-- Campo: Email del invitado -->
+                <!--<div class="mb-3">
+                  <input type="email" class="form-control mb-2" id="email" placeholder="Tu email" required>
                 </div>
 
+                <!-- Campo: Selección de asistencia -->
                 <div class="mb-3">
-                <!--  <label for="asistencia" class="form-label">¿Asistirán?</label> -->
                   <select class="form-select" id="asistencia" required>
-                    <option value="">Confirma tu asistencia </option>
+                    <option value="">Confirma tu asistencia</option>
                     <option value="Sí">Sí</option>
                     <option value="No">No</option>
                   </select>
                 </div>
 
+                <!-- Campo: Nombres de acompañantes -->
                 <div class="mb-3">
-                <!--   <label for="mensaje" class="form-label">Mensaje para los novios</label>  -->
-                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Déjales un mensaje bonito..."></textarea>
+                <!--  <textarea class="form-control" id="asistentes" rows="2" placeholder="Nombre(s) de tus acompañantes, si aplica: "></textarea> -->
+                  <textarea class="form-control" id="asistentes" rows="2" placeholder="Nombre(s) de tus acompañantes, si aplica:"></textarea>
+
+                  
                 </div>
 
+                <!-- Campo: Mensaje para los anfitriones -->
+                <div class="mb-3">
+                  <textarea class="form-control" id="mensaje" rows="3" placeholder="Déjales un mensaje bonito..."></textarea>
+                </div>
+
+                <!-- Botón de envío -->
                 <div class="d-grid">
                   <button type="submit" class="btn btn-enviar">Enviar Confirmación</button>
                 </div>
 
               </form>
-
-
-            </div>
-          </div>
-
+              
         </div>
       </div>
     </div>
@@ -673,32 +675,42 @@
 
   <!-- INICIO SCRIPT CONEXION FORMULARIO GOOGLE_SHETS -->
 
+
+
   <script>
-document.getElementById("miFormulario").addEventListener("submit", function(e){
-  e.preventDefault();
+// Escuchamos el evento "submit" del formulario
+document.getElementById("miFormulario").addEventListener("submit", function(e) {
+  e.preventDefault(); // Evita que se recargue la página al enviar el formulario
 
+  // Creamos un objeto FormData para enviar los datos
   var data = new FormData();
-  data.append("asistente1", document.getElementById("asistente1").value);
-  data.append("correo", document.getElementById("correo").value);
-  data.append("asistencia", document.getElementById("asistencia").value);
-  data.append("mensaje", document.getElementById("mensaje").value);
+  data.append("Nombre", document.getElementById("nombre").value);         // Nombre del invitado
+ // data.append("Email", document.getElementById("email").value);           // Correo electrónico
+  data.append("Asistencia", document.getElementById("asistencia").value); // Confirmación de asistencia
+  data.append("Asistentes", document.getElementById("asistentes").value); // Acompañantes, si aplica
+  data.append("Mensaje", document.getElementById("mensaje").value);       // Mensaje para los novios
 
-  /* fetch("TU_URL_DEL_WEB_APP", { */
-    
-  fetch(" https://script.google.com/macros/s/AKfycbwGP-pKCjm_bFZ77vZlOOk00mJKOpwddoVkteJKwpUeoGJpCfJ2Ea3hIVNVtKlxb5Q3xw/exec ", {
+  // Enviamos los datos a la URL del Web App de Google Apps Script
+  fetch("https://script.google.com/macros/s/AKfycbxShzZLPFcmVQX9wig5amweqQ1xDgvA2gtCKfBdSfmZZtq_AAzdRmjhiuPDFmipxA3RdQ/exec", {
     method: "POST",
     body: data
   })
-  .then(response => response.json())
+  .then(response => response.json()) // Parseamos la respuesta
   .then(result => {
-    alert("¡Datos enviados con éxito!");
-    document.getElementById("miFormulario").reset();
+    alert("¡Datos enviados con éxito!"); // Mostramos mensaje de éxito
+    document.getElementById("miFormulario").reset(); // Limpiamos el formulario
   })
   .catch(error => {
-    console.error("Error al enviar datos: ", error);
+    console.error("Error al enviar datos: ", error); // Mostramos error en consola
   });
 });
 </script>
+
+
+
+
+
+
 
   <!-- cerrar  SCRIPT CONEXION FORMULARIO GOOGLE_SHETS -->
 
@@ -746,7 +758,7 @@ document.getElementById("miFormulario").addEventListener("submit", function(e){
    
             <!-- Botón -->
             <div class="d-grid mt-4">
-            <a href="index_album.html" class="btn btn-enviar btn-lg"> Subir Fotos a Álbum </a>
+            <a href="https://drive.google.com/drive/folders/1hhiGKZefCJoy9MWqImP-dTvfDCjJnsGt " class="btn btn-enviar btn-lg"> Subir Fotos a Álbum </a>
             </div>
 
  
