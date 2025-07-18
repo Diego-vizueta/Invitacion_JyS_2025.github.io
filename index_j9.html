@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- META TAGS PARA WHATSAPP Y REDES SOCIALES -->
+     <!-- META TAGS PARA WHATSAPP Y REDES SOCIALES -->
 <meta name="author" content="Diego Fernando Vizueta Díaz, Design UX/UI ">
 <meta property="og:title" content="Invitación a Nuestra Boda: Jorge y Sandra" />
 <meta property="og:description" content="Acompáñanos a celebrar un momento inolvidable. ¡Estás invitado!" />
@@ -14,7 +14,10 @@
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Pases Boda JyS </title>
+
+
+
+  <title>Invitación Boda JyS</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,15 +25,50 @@
   <!-- Iconos FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
 <!-- tipografías -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
-  
-  <!-- Archivo CSS personalizado -->
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="style.css">
+
+
+
+  <!-- Estilos CSS -->
+  <style>
+    /* Estilo base para todas las imágenes */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Imagen con efecto hover */
+    .img-hover {
+      cursor: pointer;
+      border-radius: 4px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .img-hover:hover {
+      box-shadow: 0 0 10px #DAA520 ;
+    }
+
+    /* Centrado vertical en mobile */
+    @media (max-width: 767.98px) {
+      .main-section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  </style>
+
+  <!-- Bootstrap (si estás usándolo) -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 
   <!-- Google Tag Manager -->
@@ -42,14 +80,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 
-  <!-- Scroll suave  Diego VIzueta Design UX/UI  (7/7/2025) -->
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-  
 </head>
+
 
 
 <body>
@@ -60,84 +92,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-  <!--  Sección 1 -->
-  <section id="seccion1" class="bg-success1 text-white text-center p-1 ">
-    
-  
-     <!-- Contenedor principal -->
-  <div class="container py-3">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
 
-        <!-- Tarjeta del formulario 
-        <div class="card form-card shadow"  >
+  <section class="main-section d-flex d-md-block justify-content-center align-items-center"> 
 
-          <div class="card-body"> 
+    <!-- Contenedor principal -->
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
 
-            <br> <br> -->
-           
-          
-          
-            <img src="name.svg" class="img-fluid imagen-personalizada " alt="Imagen JyS HEADER">
-             <br> 
+          <div class="card form-card shadow text-center p-4">
 
+            <!-- Imagen con enlace y hover -->
+            <a href="index_pases_j9.html">
+              <img src="sobre_cerrado22.png" alt="Haz clic aquí" class="img-hover">
+            </a>
 
-               
-              </div>
-              <p class="text-center subtitulo"> Invitación reservada </p>
+            <!-- Botón -->
+            <div class="d-grid mt-4">
+            <a href="index_pases_j9.html" class="btn btn-enviar btn-lg"> Continuar </a>
+            </div>
 
-                 <br>  
-                  <br>   
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <h3 class="text-center mb-3" style="font-family: 'Great Vibes', cursive; font-size: 32px; color: #5E6C56;">
-                Sr. Fernando Paguay y Sra.
-              </h3>
-              <br>   <br>
-
-                 
-              <p class="text-center subtitulo"> <strong> 2 Personas </strong>  </p> 
-
-              <br>   <br>
-                  
-               <div>
-            
-             <!--  <p class="text-center subtitulo"> 4 Personas
-                 </p>  -->
-              
-
-               
-
-                 <a href="index_invitacion_boda.html">
-                   <img src="boton_Sello.png" alt="Haz clic aquí" class="boton-img img-hover">
-                      </a>
-
-                       <br>   
-
-
-
-
-                      <div style="text-align: center;">
-           <img src="name_foter.svg" class="img-fluid imagen-personalizada "    alt="Boda J&S">
-             </div>
-             <br>  <br>
-            
-
-                
-
-  
   </section>
 
-
-  
-
-
+</body>
+</html>
 
 
 
+   
 
-  <!-- Footer con íconos -- --
-   <br>
-   <br>
+  <!-- Footer con íconos --
    
   <footer class="text-center mt-4 bg5">
     <!-- <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x mx-2"></i></a>
@@ -145,31 +134,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x mx-2"></i></a>
 
 
-  </footer>  
-
-
-
-
-
-
-  <!-- 🔝 Botón flotante para subir -->
-  <button id="btnSubir" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; display: none;">
-    ↑ Subir
-  </button>
+  </footer>  -->   
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Script personalizado -->
-  <script src="script.js"></script>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
+  <script src="script.js"></script> 
 
 </body>
 </html>
